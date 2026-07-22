@@ -12,4 +12,5 @@ test('navigate from EPAM home to Client Work', async ({ page }) => {
   await page.getByRole('link', { name: 'Explore Our Client Work' }).click();
 
   await expect(page.getByRole('heading', { name: 'Client Work' })).toBeVisible();
+  // Ensures the destination page loaded fully.
 });
